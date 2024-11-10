@@ -10,6 +10,6 @@ services:
 #      - ESPHOME_DASHBOARD_USE_PING=true
     volumes:
       - /etc/localtime:/etc/localtime:ro
-      - esphome:/config:rw
+      - /mnt/docker/iotutils/esphome/config:/config:rw
     restart: unless-stopped
     privileged: true
