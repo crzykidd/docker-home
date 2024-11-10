@@ -6,7 +6,7 @@ services:
       - 6052:6052
     environment:
       - TZ=america/los_angeles
-      - VIRTUAL_HOST=esphome.crzynet.com
+#      - VIRTUAL_HOST=esphome.crzynet.com
 #      - ESPHOME_DASHBOARD_USE_PING=true
     volumes:
       - /etc/localtime:/etc/localtime:ro
