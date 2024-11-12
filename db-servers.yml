@@ -18,6 +18,19 @@ services:
       - 3306:3306
     restart: unless-stopped
 
+  phpmyadmin:
+    image: phpmyadmin
+    restart: always
+    ports:
+      - 8080:80
+    environment:
+      - PMA_ARBITRARY=1
+
+
+
+
+
+
 secrets:
   mariadb01_root_password_secret:
     file: /mnt/docker/secrets/mariadb01_root_password_secret.txt
