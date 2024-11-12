@@ -7,11 +7,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=America/Los_Angeles
-      - MYPASSWORD_FILE= /mnt/docker/secrets/mariadb01_root_password_secret
+
     tty: true
-    secrets:
-      - mariadb01_root_password_secret
+
     
-secrets:
-   mariadb01_root_password_secret:
-     file: mariadb01_root_password_secret.txt
