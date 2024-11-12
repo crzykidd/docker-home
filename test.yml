@@ -1,0 +1,6 @@
+services:
+  sh:
+    entrypoint: /bin/sh
+    command: -c "watch "date >> /var/log/date.log""
+    image: alpine
+    tty: true
