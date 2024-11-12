@@ -4,7 +4,7 @@ services:
     image: lscr.io/linuxserver/mariadb:latest
     container_name: mariadb01
     env_file:
-      - .env
+      - /mnt/docker/secrets/mariadb01.env
     environment:
       - PUID=1000
       - PGID=1000
