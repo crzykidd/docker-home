@@ -3,4 +3,8 @@ services:
     entrypoint: /bin/sh
     command: -c "env"
     image: alpine
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=America/Los_Angeles
     tty: true
