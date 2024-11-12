@@ -7,7 +7,7 @@ services:
       - PUID=1000
       - PGID=1000
       - TZ=America/Los_Angeles
-      - FILE_MYSQL_ROOT_PASSWORD=/mnt/docker/secrets/mariadb01_root_password_secret.txt
+      - FILE__MYSQL_ROOT_PASSWORD=/mnt/docker/secrets/mariadb01_root_password_secret.txt
       #- MYSQL_DATABASE=USER_DB_NAME #optional
       #- MYSQL_USER=MYSQL_USER #optional
       #- MYSQL_PASSWORD=DATABASE_PASSWORD #optional
